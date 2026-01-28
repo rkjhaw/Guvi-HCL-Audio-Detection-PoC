@@ -7,22 +7,17 @@ export const SUPPORTED_LANGUAGES = [
   'Telugu'
 ];
 
-export const APP_THEME = {
-  primary: 'blue-700',
-  secondary: 'indigo-600',
-  accent: 'emerald-500',
-  error: 'rose-500',
-  warning: 'amber-500'
-};
+export const MOCK_API_ENDPOINT = 'https://api.voice-detect.hcl/v1/analyze';
 
 export const API_SPEC_DOCS = {
   endpoint: 'POST /api/v1/detect-voice',
   headers: {
     'Content-Type': 'application/json',
-    'Authorization': 'Bearer <YOUR_API_KEY>'
+    'x-api-key': '<YOUR_HCL_API_KEY>'
   },
   body: {
-    audio_base64: 'string (base64 encoded mp3)',
-    language_context: 'string (optional)'
+    audio_base64: 'BASE64_ENCODED_MP3_STRING',
+    language: 'Tamil | English | Hindi | Malayalam | Telugu',
+    format: 'mp3'
   }
 };

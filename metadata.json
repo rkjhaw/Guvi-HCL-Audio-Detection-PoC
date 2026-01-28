@@ -1,6 +1,6 @@
 {
-  "name": "Copy of Guvi HCL Voice Detection POC",
-  "description": "An advanced AI-powered dashboard for detecting synthetic vs. human speech across multiple languages, featuring a robust API tester and analytical engine.",
+  "name": "Guvi HCL Voice Detection POC",
+  "description": "Professional AI-powered dashboard for detecting synthetic vs. human speech. Features a multi-language detection engine and an API compliance tester.",
   "requestFramePermissions": [
     "microphone"
   ]

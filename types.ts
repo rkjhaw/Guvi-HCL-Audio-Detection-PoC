@@ -19,8 +19,9 @@ export interface DetectionResult {
 export interface ApiTestRequest {
   endpoint: string;
   apiKey: string;
-  message: string;
+  language: string;
   audioUrl: string;
+  audioFormat: 'mp3';
 }
 
 export interface ApiResponse {
@@ -28,4 +29,5 @@ export interface ApiResponse {
   data?: DetectionResult;
   message?: string;
   timestamp: string;
+  request_payload?: any;
 }
